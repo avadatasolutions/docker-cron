@@ -1,3 +1,3 @@
-* * * * * curl http://stingray-app-n2l7i.ondigitalocean.app/auto-search >/proc/1/fd/1 2>/proc/1/fd/2
+* * * * * curl http://exclusionsearch-api:8080/auto-search >/proc/1/fd/1 2>/proc/1/fd/2
 
 # An empty line is required at the end of this file for a valid cron file.
