@@ -7,10 +7,10 @@ RUN apt-get update \
     && which cron \
     && rm -rf /etc/cron.*/*
 
-COPY crontab /hello-cron
+COPY crontab /exclusions-search-cron
 COPY entrypoint.sh /entrypoint.sh
 
-RUN crontab hello-cron
+RUN crontab exclusions-search-cron
 RUN chmod +x entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
